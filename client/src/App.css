@@ -1,0 +1,1287 @@
+/*----------------------------
+          GOBAL
+----------------------------*/
+a:visited {
+  color: inherit;
+}
+
+a:hover {
+  color: #FB4F21;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+input::placeholder {
+  color: white;
+  font-size: 13px;
+  padding-left: 10px;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+/*------------------------------
+      NAVIGATION
+-----------------------------*/
+
+.nav {
+  width: 100%;
+}
+
+.logo-banner {
+  display: flex;
+}
+
+.logo {
+  height: 91%;
+  width: 13%;
+  margin-top: 10px;
+}
+
+.top-links, .bottom-links {
+  font-size: 21px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #FB4F21;
+  color: white;
+  height: 35px;
+  padding: 0 5px;
+}
+
+.nav-link, .social-links {
+  text-decoration: none;
+  color: black;
+}
+
+.banner {
+  color: #FB4F21;
+  font-size: 55px;
+  letter-spacing: 15px;
+  height: 150px; 
+  width: 967px;
+  margin-left: 20px;
+}
+
+.top-links { 
+   margin: 10px 5px;
+}
+
+.bottom-links {
+  margin: 5px;
+}
+
+.top-nav {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 18px;
+}
+
+.fa-bars {
+  display: none;
+}
+
+.search {
+  height: 25px;
+  width: 400px;
+  background: #FB4F21;
+  color: white;
+  margin: 10px;
+  font-size: 20px;
+}
+
+.hr-nav {
+  border: 0;
+  height: 1px;
+  border-top: 2px solid #D8D8D8;
+}
+
+.bottom-nav {
+  display: flex;
+  margin-left: 10px;
+}
+
+.menu-icon {
+  display: none;
+}
+
+.mobile-modal {
+  display: none;
+}
+
+.mobile-search {
+  display: none;
+}
+
+/*----------------------------
+      HOME
+----------------------------*/
+
+.home-container {
+  margin-top: 25px;
+}
+
+.top-container { 
+  height: 400px;
+  color: white;
+  font-size: 65px;
+  font-weight: bold;
+}
+
+.top-middle-container, .bottom-middle-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.top-middle-container {
+  height: 450px;
+  margin-top: 35px;
+}
+
+.bottom-middle {
+  width: 50%;
+}
+
+.top-text {
+  text-align: center; 
+  position: absolute; 
+  z-index: 10;
+  left: 50%;
+  transform: translate(-50%, 80px); 
+  width: 100%;
+}
+
+.top-image {
+  height: 400px;
+  width: 33.33%;
+  opacity: .7;
+  position: relative;
+}
+
+.left, .right, .middle {
+  height: 470px;
+  border: 1px solid #D8D8D8;
+}
+
+.links-container {
+  width: 33.33%;
+}
+
+.middle-image {
+  height: 320px;
+  width: 99%;
+  padding: 0;
+}
+
+.tour {
+  width: 100%;
+}
+
+.school {
+  float: right;
+}
+
+ .ramen-text {
+  display: flex;
+  justify-content: center;
+  margin: 0 5px;
+} 
+
+.middle-text {
+  height: 110px;
+  padding: 20px;
+}
+
+.title {
+  font-size: 40px;
+}
+
+.description {
+  font-size: 25px;
+  text-align: center;
+}
+
+.shop-contain {
+  display: flex;
+  justify-content: space-around;
+}
+
+.bottom-middle-container {
+  margin-top: 35px;
+  height: 480px;
+}
+
+.left-middle-text, .right-middle-text {
+  padding: 20px 0;
+}
+
+.bottom-image {
+  height: 290px;
+  width: 30%;
+}
+
+.picks-contain {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 40px;
+}
+.picks-image {
+  height: 200px;
+  width: 30%;
+}
+
+/*---------------------
+    footer
+--------------------*/
+
+.bottom-container {
+  height: 170px;
+  display: flex;
+}
+
+.bottom-left {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+}
+ 
+.bottom-right {
+  width: 50%;
+  align-self: center;
+}
+
+ .social-contain { 
+  width: 35%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.social {
+  height: 70px;
+  width: 68px;
+}
+
+.ig {
+  height: 51px;
+  width: 50px;
+  margin-top: 10px;
+}
+
+.footer-signup-button {
+  margin-top: 10px;
+}
+
+/*-------------------------
+        side nav
+-------------------------*/
+
+.side-nav-contain {
+  height: 700px;
+  width: 18%;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #D8D8D8;
+  color: white;
+  font-size: 20px;
+  margin-top: 30px;
+  padding-top: 35px;
+}
+
+.side-nav {
+  background: #FB4F21;
+  height: 35px;
+  width: 200px;
+  margin: 7px 30px 7px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 20px;
+}
+
+/*----------------------
+    about me
+----------------------*/
+
+.connect-container {
+  display: flex;
+}
+
+.photo-container {
+  margin: 0 60px;
+}
+
+.caption {
+  margin-top: 0;
+  font-size: 12px;
+}
+
+ .name-contain {
+    text-align: center;
+    width: 67%;
+}
+
+.brian {
+  height: 500px;
+  width: 750px;
+}
+
+.name {
+  font-size: 60px;
+  margin-bottom: 0;
+  font-weight: 600;
+}
+
+.about-description {
+  font-weight: 600;
+}
+
+.contact-me {
+  font-size: 40px;
+  margin: 10px;
+}
+
+.about-email-contain {
+  display: flex;
+  margin-left: 9px;
+}
+
+.fa {
+  margin-top: 6px;
+}
+
+.social-text {
+  margin: 0 0 0 8px;
+}
+
+.social-links {
+  font-size: 25px;
+  color: black;
+  display: flex;
+  margin: 17px;
+}
+
+.bio {
+  margin: 0 65px 0 55px;
+  text-align: justify;
+}
+
+.bio-title {
+  font-size: 35px;
+}
+
+.bio-text {
+  font-size: 23px;
+}
+
+.text-link {
+  color: black;
+  border-bottom: 2px solid #FB4F21;
+}
+
+/*---------------------
+      register
+---------------------*/
+
+.register-contain {
+  height: 790px;
+  display: flex;
+  flex-direction: column;
+  font-size: 23px;
+}
+
+.create {
+  margin: 40px 0 30px 50px;
+}
+
+.create-profile {
+  margin: 0;
+}
+
+.required {
+  margin: 0 0 0 15px;
+}
+
+.form-field {
+  display: flex;
+}
+
+.label {
+  margin-left: 65px;
+}
+
+.input {
+  margin: 0 0 10px 10px;
+}
+
+.input-field {
+  height: 28px;
+  width: 257px;
+  font-size: 20px;
+}
+
+.first-name {
+  margin-left: 69px;
+}
+
+.last-name {
+  margin-left: 71px;
+}
+
+.email {
+  margin-left: 128px;
+}
+
+.register {
+  height: 46px;
+  width: 120px;
+  background: #FB4F21;
+  color: white;
+  font-size: 20px;
+}
+
+.register-br-mobile {
+  display: none;
+}
+
+.submit-contain {
+  justify-content: center;
+  margin-top: 90px;
+}
+
+.subscribe-wrapper {
+  margin-top: 21px;
+}
+
+.icheckbox_square-red:hover {
+  border: 2px solid #FB4F21;
+}
+
+.checkbox {
+  color: #FB4F21;
+}
+
+/*----------------------
+    sign in/register
+----------------------*/
+
+.signin-page-container {
+  display: flex;
+}
+
+.signin-container {
+  border: 1px solid #D8D8D8;
+  height: 430px;
+  width: 825px;
+  margin: 150px 0 0 121px;
+}
+
+.signin-register {
+  border: 1px solid #D8D8D8;
+}
+
+.signin-register {
+  height: 48px;
+  width: 318px;
+  margin: 27px 0 0 18px;
+  background: #FB4F21;
+  color: white;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.forms-contain {
+  display: flex;
+  font-size: 20px;
+}
+
+.returning {
+  margin: 56px 0 0 35px;
+}
+
+.new-user {
+  margin: 56px 0 0 96px;
+}
+
+.login-submit, .register-submit {
+  height: 43px;
+  width: 120px;
+  background: #FB4F21;
+  color: white;
+  font-size: 20px;
+}
+
+.login-submit {
+  margin: -7px 0 0 195px;
+}
+
+.register-submit {
+  margin: 116px 0 0 146px;
+}
+
+.signin-register-link {
+  text-decoration: none;
+}
+
+.signin-label {
+  margin-right: 40px;
+}
+
+.login-password {
+  margin-top: 30px;
+}
+
+.signin-email {
+  margin-left: 38px;
+}
+
+.signin-email, .signin-password, .signin-register-input {
+  font-size: 20px;
+}
+
+.signin-register-input {
+  width: 60%;
+}
+
+/*------------------
+        Blog
+------------------*/
+
+.blog-container {
+  display: flex;
+}
+
+.posts-container {
+  border: 1px solid #D8D8D8;
+  width: 80%;
+  margin: 30px 0 0 10px;
+}
+
+.recent-posts-header {
+  margin-left: 30px;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.posts {
+  display: flex;
+}
+
+/*--------------------
+      Blog Photos
+--------------------*/
+
+.blog-post-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.post {
+  height: 320px;
+  width: 574px;
+  border: 1px solid black;
+}
+
+.post-text {
+  height: 138px;
+  width: 99%;
+  background: #FB4F21;
+  color: white;
+  font-size: 20px;
+}
+
+.blog-post-date, .blog-post-teaser {
+  margin: 15px 25px 5px 35px;
+}
+
+/*-------------------
+      Blog Post
+-------------------*/
+
+.single-post-container {
+  display: flex;
+}
+
+.single-blog-post {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  border: 1px solid #D8D8D8;
+  margin: 30px 0 0 10px;
+}
+
+.blog-image-container {
+  height: 567px;
+  width: 852px;
+}
+
+.blog-image {
+  height: 567px;
+  width: 852px;
+}
+
+.post-date {
+  font-size: 23px;
+  margin: 30px;
+  float: left;
+ }
+
+.image-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.blog-post-content {
+  font-size: 22px;
+  line-height: 38px;
+  margin: 40px 148px 40px 148px;
+}
+
+.return {
+  margin: 7px 30px 30px 30px;
+  font-size: 23px;
+  display: flex;
+  float: right;
+  background: #FB4F21;
+  color: white;
+  padding-left: 18px;
+  border-radius: 5px;
+  height: 70px;
+  align-items: center;
+}
+
+.return:hover {
+  background: white;
+  color: #FB4F21;
+  border: 1px solid #FB4F21;
+}
+
+.blogpost-arrow {
+  margin: 30px 30px 30px 10px;
+}
+
+/*-------------------
+      Store
+-------------------*/
+
+.store-container {
+  display: flex;
+}
+
+/*-----------------
+      Schools
+-----------------*/
+
+.schools-container {
+  display: flex;
+}
+
+.schools-inner-container {
+  display: flex;
+  flex-direction: column;
+}
+
+/*----------------------
+      Search Results
+----------------------*/
+
+.search-results-container {
+  display: flex;
+}
+
+.results-container {
+  margin: 20px 20px 0 40px;
+}
+
+.results-posts {
+  list-style-type: none;
+  margin: 40px 40px 40px 0;
+  line-height: 25px;
+}
+
+.results-post-text:hover {
+  color: #FB4F21;
+}
+
+.results-date {
+  font-family: 'Secular One', sans-serif;
+}
+
+.spinner-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/*----------------------
+          Media
+----------------------*/
+
+.media-wrapper {
+  border: 2px solid #D8D8D8;
+  margin: 40px 100px 50px 50px;
+}
+
+.media-container {
+  margin: 50px 150px 100px 100px;
+}
+
+.media-header {
+  font-size: 60px;
+  font-weight: 600;
+}
+
+.media-subheader {
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.media-title {
+  font-weight: 700;
+}
+
+.media-link {
+  border-bottom: 2px solid #FB4F21;
+}
+
+.media-image {
+  max-height: 20%;
+  max-width: 20%;
+}
+
+.media-img-carousel {
+  max-height: 40%;
+  max-width: 40%;
+}
+
+.media-img-div {
+  background: white;
+}
+
+/*------------------------
+          Tours
+-------------------------*/
+
+.tours-container {
+  margin: 0 150px 100px 100px;
+  display: flex;
+  flex-direction: column;
+}
+
+.tours-wrapper {
+  border: 2px solid #D8D8D8;
+  margin: 40px 100px 50px 50px;
+}
+
+.tours-header { 
+  font-size: 60px;
+  font-weight: 600;
+  margin-bottom: 0;
+}
+
+.tours-note {
+  margin-top: 35px;
+}
+
+.tours-image {
+  max-height: 70%;
+  max-width: 70%;
+  align-self: center;
+  margin-bottom: 30px;
+}
+
+.tours-listing {
+  margin-top: 20px;
+}
+
+/*--------------------------
+      media queries
+--------------------------*/
+
+@media (max-width: 500px) {
+
+  .side-nav-contain {
+    display: none;
+  }
+  /*==============
+  Navigaton-mobile
+  ==============*/
+
+  .hr-nav{
+    margin: 0;
+  }
+
+  .top-elements {
+    display: none;
+  }
+
+  .bottom-nav {
+    display: none;
+  }
+
+  .top-nav {
+    margin-right: 8px;
+  }
+
+  .logo {
+    height: 81%;
+    width: 21%;
+    margin-left: 3px;
+    margin-top: 18px;
+  }
+
+  .banner {
+    font-size: 20px;
+    width: 100%;
+    margin-left: 10px;
+    height: 90px;
+    letter-spacing: 10px;
+  }
+
+  .banner-text {
+    margin-top: 31px;
+  }
+
+  .fa-bars {
+    height: 36px;
+    display: block;
+    color: #FB4F21;
+    margin-top: 38px;
+  }
+
+  .mobile-modal {
+    display: block;
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    z-index: 20;
+    background: white;
+  }
+
+  .mobile-menu {
+    height: 100vh;
+    width: 100vw;
+    list-style-type: none;
+    background: white;
+    padding: 0;
+  }
+
+  .mobile-menu-item {
+    margin: 23px 0 23px 40px;
+  }
+
+  .hr-mobile {
+    border-top: 1px solid black;
+  }
+
+  .fa-angle-double-right {
+    margin-left: 10px;
+  }
+
+  .mobile-search {
+    display: flex;
+    justify-content: center;
+  }
+
+  .search {
+    width: 345px;
+  }
+  /*============
+    HOME-mobile
+  =============*/
+
+  .home-container {
+    width: 100%;
+    margin-top: 0;
+  }
+
+  .top-container {
+    font-size: 26px;
+    width: 100%;
+    height: 100px;
+  }
+
+  .top-image {
+    height: 100px;
+  }
+
+  .top-text {
+    top: 51px;
+  }
+
+  .top-middle-container {
+    height: 230px;
+    width: 100%;
+    margin-top: 0;
+  }
+
+  .title {
+    font-size: 15px;
+    margin-bottom: 10px;
+  }
+
+  .middle-text {
+    padding: 20px 0 0 0;
+  }
+
+  .middle-image {
+    height: 100px;
+  }
+
+  .description {
+    font-size: 12px;
+  }
+
+  .left, .right, .middle {
+    height: 230px;
+  }
+  
+  .bottom-image {
+    height: 80px;
+  }
+
+  .picks-contain {
+    margin-top: 18px;
+  }
+
+  .picks-image {
+    height: 49px;
+  }
+
+  .bottom-middle-container {
+    height: 230px;
+    width: 100%;
+    margin: 0;
+  }
+
+  /*==============
+    ABOUT-mobile
+  ==============*/
+
+  .about-contain {
+    width: 100%;
+  }
+
+  .name-contain {
+    width: 99%;
+  }
+  .name {
+    font-size: 30px;
+  }
+
+  .about-description {
+    font-size: 20px;
+  }
+
+  .connect-container {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .photo-container {
+    margin: 0;
+  }
+
+  .brian {
+    width: 104vw;
+    height: 253px;
+  }
+
+  .caption {
+    margin: 0 10px 0 12px;
+  }
+
+  .contact {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .contact-me {
+    font-size: 25px;
+  }
+
+  .social-links {
+    font-size: 18px;
+  }
+
+  .bio {
+    margin: 28px;
+  }
+
+  .bio-title {
+    font-size: 28px;
+  }
+
+  .bio-text {
+    font-size: 18px;
+  }
+
+  /*==============
+   SIGN IN-mobile
+  ==============*/
+
+  .signin-page-container {
+    width: 100%;
+  }
+
+  .signin-container {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+  }
+
+  .forms-contain {
+    width: 100%;
+    flex-direction: column;
+    font-size: 15px;
+  }
+
+  .signin-email, .signin-password, .signin-register-input {
+    font-size: 18px;
+  }
+
+  .signin-password, .signin-email {
+    width: 182px;
+  }
+
+  .returning {
+    margin: 20px 0 0 23px;
+  }
+
+  .signin-email {
+    margin-left: 30px;
+  }
+
+  .signin-title {
+    font-size: 20px;
+  }
+
+  .login-submit {
+    margin: 4px 0 5px 181px;
+  }
+
+  .new-user {
+    margin: 20px 0 0 24px;
+    border-top: 1px solid #D8D8D8;
+  }
+
+  .register-submit {
+    margin: 27px 0 20px 182px;
+  }
+
+  /*==============
+   REGISTER-mobile
+  ==============*/
+
+  .register-contain {
+    height: 100%;
+    width: 100%;
+  }
+
+  .create {
+    font-size: 20px;
+    margin: 30px 0 30px 25px;
+  }
+
+  .label {
+    font-size: 15px;
+    margin-left: 20px;
+  }
+  
+  .input-field {
+    font-size: 18px;
+  }
+
+  .first-name, .last-name, .email, .password {
+    width: 182px;
+  }
+
+  .first-name {
+    margin: 0 0 8px 20px;
+  }
+
+  .last-name {
+    margin-left: 22px;
+  }
+
+  .email {
+    margin-left: 58px;
+  }
+
+  .register-br-mobile {
+    display: block;
+  }
+
+  .password {
+    margin-left: -7px;
+  }
+
+  .submit-contain {
+    margin: 20px 0 23px 143px;
+  }
+/*=================
+   SEARCH-mobile
+=================*/
+
+  .search-results-container {
+    width: 100%;
+  }
+
+  .search-results-header {
+    font-size: 19px;
+    width: 100%;
+  }
+
+  .results-posts {
+    padding: 0;
+    width: 100%;
+    margin: 40px 0 40px 0;
+  }
+/*================
+    BLOG-mobile
+================*/
+
+  .posts-container {
+    width: 100%;
+  }
+
+  .posts {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .post {
+    height: 217px;
+    width: 100%;
+  }
+  
+  .post-text {
+    width: 100%;
+  }
+
+/*=================
+  BLOG POST-mobile
+=================*/
+
+  .single-blog-post {
+    width: 100%;
+  }
+
+  .blog-image-container {
+    height: 280px;
+    width: 100%;
+  }
+
+  .blog-image {
+    height: 280px;
+    width: 100%;
+  }
+
+  .blog-post-content {
+    font-size: 18px;
+    line-height: 35px;
+    margin: 0 25px 12px 25px;
+  }
+
+  .post-date {
+    font-size: 21px;
+  }
+
+  .return {
+    font-size: 19px;
+  }
+
+  /*=============
+  FOOTER-mobile
+  ==============*/
+
+  .bottom-container {
+    height: 105px;
+    width: 100%;
+  }
+
+  .signup-text {
+    text-align: center;
+    font-size: 12px;
+    margin-left: 10px;
+  }
+
+  .social-contain {
+    width: 99%;
+    margin: 0 auto;
+    justify-content: center;
+  }
+
+  .social {
+    height: 43px;
+    width: 44px;
+  }
+
+  .ig {
+    height: 29px;
+    width: 31px;
+    margin: 7px 0 0 6px;
+  }
+
+  .footer-signup-button {
+    height: 30px;
+    width: 105px;
+    font-size: 17px;
+  }
+
+/*================
+   MEDIA-mobile
+================*/
+
+  .media-wrapper {
+    margin: 0;
+    width: 100%;
+  }
+
+  .media-container {
+    margin: 0 20px 25px 20px;
+  }
+
+  .media-header {
+    font-size: 45px;
+  }
+
+  .media-subheader {
+    font-size: 20px;
+  }
+
+/*==================
+   TOURS-mobile
+==================*/
+
+  .tours-wrapper {
+    margin: 0;
+    width: 100%;
+  }
+
+  .tours-container {
+    margin: 0 20px 25px 20px;
+  }
+
+  .tours-header {
+    font-size: 45px;
+  }
+
+  .tours-note {
+    margin-top: 0;
+  }
+}
