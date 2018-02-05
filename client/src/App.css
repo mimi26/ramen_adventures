@@ -9,7 +9,11 @@ a:hover {
   color: #FB4F21;
 }
 
-a:link {
+a:active,
+a:hover,
+a:visited,
+a:link
+ {
   text-decoration: none;
 }
 
@@ -23,10 +27,10 @@ body {
   font-family: 'Open Sans', sans-serif;
 }
 
-/*------------------------------
+/* ------------------------------
       NAVIGATION
 -----------------------------*/
-
+/*
 .nav {
   width: 100%;
 }
@@ -115,6 +119,9 @@ body {
 .mobile-search {
   display: none;
 }
+*/
+
+
 
 /*----------------------------
       HOME
@@ -220,8 +227,8 @@ body {
 }
 
 .bottom-image {
-  height: 290px;
-  width: 30%;
+  height: 25vh;
+  width: 9vw;
 }
 
 .picks-contain {
@@ -251,6 +258,11 @@ body {
   justify-content: center;
   align-items: center;
   font-size: 24px;
+}
+
+.footer-signup-button-link {
+  display: flex;
+  justify-content: center;
 }
  
 .bottom-right {
@@ -314,6 +326,7 @@ body {
 
 .connect-container {
   display: flex;
+  justify-content: center;
 }
 
 .photo-container {
@@ -564,7 +577,7 @@ body {
 
 .posts-container {
   border: 1px solid #D8D8D8;
-  width: 80%;
+  width: 100%;
   margin: 30px 0 0 10px;
 }
 
@@ -576,6 +589,7 @@ body {
 
 .posts {
   display: flex;
+  justify-content: center;
 }
 
 /*--------------------
@@ -586,12 +600,13 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
+  width: 40%;
 }
 
 .post {
-  height: 320px;
-  width: 574px;
-  border: 1px solid black;
+  height: 50vh;
+  width: 39vw;
 }
 
 .post-text {
@@ -612,42 +627,74 @@ body {
 
 .single-post-container {
   display: flex;
+  justify-content: center;
 }
 
 .single-blog-post {
   display: flex;
   flex-direction: column;
-  width: 80%;
+  width: 90%;
   border: 1px solid #D8D8D8;
   margin: 30px 0 0 10px;
 }
 
-.blog-image-container {
+/* .blog-image-container {
   height: 567px;
   width: 852px;
+} */
+/* 
+.blog-image {
+  max-height: 60%;
+  max-width: 60%;
+} */
+
+.blogpost-top-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin: 30px;
 }
 
-.blog-image {
-  height: 567px;
-  width: 852px;
+.blogpost-top-contain {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 40px;
+}
+
+.blog-image-div {
+  background: white;
+  margin-bottom: 7vh;
+  display: flex;
+  justify-content: center;
 }
 
 .post-date {
   font-size: 23px;
   margin: 30px;
-  float: left;
  }
 
-.image-content {
+ .post-title {
+   font-size: 25px;
+   margin: 30px;
+ }
+
+.image-content-desktop {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
+.image-content-mobile {
+  display: none;
+}
+
+.control-arrow {
+  background: #FB4F21 !important;
+}
+
 .blog-post-content {
   font-size: 22px;
   line-height: 38px;
-  margin: 40px 148px 40px 148px;
+  margin: 30px 148px 40px 148px;
 }
 
 .return {
@@ -673,12 +720,9 @@ body {
   margin: 30px 30px 30px 10px;
 }
 
-/*-------------------
-      Store
--------------------*/
-
-.store-container {
-  display: flex;
+.blog-loading {
+  font-size: 25px;
+  margin: 30px;
 }
 
 /*-----------------
@@ -700,6 +744,7 @@ body {
 
 .search-results-container {
   display: flex;
+  justify-content: center;
 }
 
 .results-container {
@@ -807,11 +852,274 @@ body {
   margin-top: 20px;
 }
 
+/*---------------------
+         Store
+---------------------*/
+
+.store-container {
+  margin: 45px 150px 100px 100px;
+  border: 2px solid #D8D8D8;
+}
+
+.store-header {
+  margin-left: 114px;
+  font-size: 45px;
+  font-weight: 600;
+}
+
+.store-sub-header {
+  font-size: 17px;
+  margin: 30px;
+  margin: 30px 20px 70px 30px;
+}
+
+img.store-bookcover {
+  max-height: 66%;
+  max-width: 66%;
+  margin: 0 0 15px 0;
+}
+
+.store-book-amazon {
+  text-align: center;
+}
+
+.store-top-div {
+  display: flex;
+  justify-content: space-around;
+}
+
+.store-img-container {
+  text-align: center;
+}
+
+.store-book-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.store-book-container p {
+  margin: 2px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.store-bottom-div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.store-link {
+  border-bottom: 2px solid #FB4F21;
+}
+
+.store-t-shirt-div {
+  text-align: center;
+  margin: 20px;
+}
+
+.store-t-shirt-div img {
+  max-height: 400px;
+}
+
+/*----------------------
+      Tokyo School
+----------------------*/
+
+.tokyo-school-wrapper {
+  border: 2px solid #D8D8D8;
+  margin: 40px 100px 50px 50px;
+}
+
+.tokyo-school-container {
+  margin: 50px 150px 100px 100px;
+  font-size: 20px;
+  line-height: 32px;
+}
+
+.tokyo-school-header {
+  font-size: 55px;
+  font-weight: 600;
+  margin-bottom: 55px;
+}
+
+.tokyo-school-subheader {
+  margin-top: 50px;
+}
+
+.tokyo-school-image-div {
+  background: white;
+}
+
+.tokyo-school-image {
+  max-height: 70%;
+  max-width: 70%;
+}
+
+.tokyo-school-paragraph-intro {
+  font-weight: 600;
+}
+
+.tokyo-school-link {
+  color: black;
+  border-bottom: 2px solid #FB4F21;
+}
+
+.tokyo-school-video-wrapper {
+  display: flex;
+  justify-content: center;
+  margin: 30px 0 30px 0;
+}
+
+.tokyo-school-video {
+   width: 640px;
+   height: 360px;
+}
+
+/*-----------------------
+      Osaka School
+-----------------------*/
+
+.osaka-school-wrapper {
+  border: 2px solid #D8D8D8;
+  margin: 40px 100px 50px 50px;
+}
+
+.osaka-school-container {
+  margin: 50px 150px 100px 100px;
+  font-size: 20px;
+  line-height: 32px;
+}
+
+.osaka-school-header {
+  font-size: 55px;
+  font-weight: 600;
+  margin-bottom: 55px;
+}
+
+.osaka-school-subheader {
+  font-weight: 600;
+}
+
+.osaka-school-image-div {
+  background: white;
+}
+
+.osaka-school-big-image {
+  max-height: 40%;
+  max-width: 40%;
+}
+
+.osaka-school-image {
+  max-height: 70%;
+  max-width: 70%;
+}
+
+#legend {
+  font-size: 17px;
+}
+
+.osaka-details {
+  margin-top: 60px;
+}
+
+.osaka-school-details {
+  display: flex;
+}
+
+.osaka-school-details-text {
+  border: 1px solid #D8D8D8;
+  padding: 10px 20px;
+  width: 75%;
+}
+
+.question-box {
+  width: 13%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.osaka-bold {
+  font-weight: 700;
+  margin: 10px 15px;
+}
+.osaka-faq-div {
+  margin: 30px 0;
+}
+
+.osaka-a, .osaka-q {
+  display: flex;
+}
+
+.osaka-answer-text {
+  margin: 10px 0;
+}
+
+.osaka-video-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.osaka-school-video {
+   width: 640px;
+   height: 360px;
+}
+
+.osaka-carousel-mobile {
+  display: none;
+}
+
+/*----------------------
+    Comment Form
+----------------------*/
+
+.comment-message {
+    position: absolute;
+    z-index: 10;
+    background: white;
+    height: 35vh;
+    width: 79vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 2.5vw;
+}
+
+#comment-login-link {
+  width: auto;
+}
+
+/*-----------------------
+          Map
+-----------------------*/
+
+.map-wrapper {
+  border: 2px solid #D8D8D8;
+  margin: 40px 100px 50px 50px;
+}
+
+.map-container {
+  margin: 50px 150px 100px 100px;
+  font-size: 20px;
+  line-height: 32px;
+  height: 80vh;
+}
+
+/*-----------------------
+        Best Of
+-----------------------*/
+
+.best-loading-message {
+  font-weight: 600;
+  font-size: 30px;
+}
 /*--------------------------
-      media queries
+  media queries - mobile
 --------------------------*/
 
-@media (max-width: 500px) {
+@media only screen and (max-width: 500px) {
 
   .side-nav-contain {
     display: none;
@@ -820,7 +1128,7 @@ body {
   Navigaton-mobile
   ==============*/
 
-  .hr-nav{
+  .hr-nav {
     margin: 0;
   }
 
@@ -828,50 +1136,50 @@ body {
     display: none;
   }
 
-  .bottom-nav {
+  div.bottom-nav {
     display: none;
   }
 
-  .top-nav {
-    margin-right: 8px;
+  div.top-nav {
+    margin: 0 8px 0 0;
   }
 
-  .logo {
-    height: 81%;
-    width: 21%;
+  img.logo {
+    max-height: 48%;
     margin-left: 3px;
     margin-top: 18px;
   }
 
-  .banner {
-    font-size: 20px;
+  div.banner {
+    font-size: 18px;
     width: 100%;
-    margin-left: 10px;
+    margin-left: 2px;
     height: 90px;
     letter-spacing: 10px;
   }
 
-  .banner-text {
-    margin-top: 31px;
+  div.banner p {
+    margin-top: 2em;
   }
 
-  .fa-bars {
+  i.fa-bars {
     height: 36px;
     display: block;
     color: #FB4F21;
     margin-top: 38px;
   }
 
-  .mobile-modal {
+  div.mobile-modal {
     display: block;
-    height: 100vh;
+    height: 145vh;
     width: 100vw;
+    margin: 0 0 -9vh 0;
     position: absolute;
     z-index: 20;
     background: white;
   }
 
-  .mobile-menu {
+  div.mobile-menu {
     height: 100vh;
     width: 100vw;
     list-style-type: none;
@@ -891,13 +1199,14 @@ body {
     margin-left: 10px;
   }
 
-  .mobile-search {
+  div.mobile-search {
     display: flex;
     justify-content: center;
+    margin-top: -3.5em;
   }
 
-  .search {
-    width: 345px;
+  input.search {
+    width: 92vw;
   }
   /*============
     HOME-mobile
@@ -950,7 +1259,8 @@ body {
   }
   
   .bottom-image {
-    height: 80px;
+    height: 73px;
+    width: 44px;
   }
 
   .picks-contain {
@@ -1181,28 +1491,54 @@ body {
     width: 100%;
   }
 
+  .blogpost-top-wrapper {
+    display: block;
+  }
+
   .blog-image-container {
-    height: 280px;
+    height: 567px;
     width: 100%;
   }
 
+  .blog-image-div {
+    display: block;
+  }
+
   .blog-image {
-    height: 280px;
-    width: 100%;
+    max-height: 90%;
+    max-width: 90%;
   }
 
   .blog-post-content {
     font-size: 18px;
     line-height: 35px;
-    margin: 0 25px 12px 25px;
+    margin: -50px 25px 12px 25px;
   }
 
   .post-date {
     font-size: 21px;
   }
 
+  .post-title {
+    font-size: 22px;
+  }
+
+  .image-content-desktop {
+    display: none;
+  }
+
+  .image-content-mobile {
+    display: block;
+  }
+
   .return {
     font-size: 19px;
+    margin: -5px 80px 0 0;
+    padding-right: 10px;
+  }
+
+  .mobile-menu {
+    padding: 0;
   }
 
   /*=============
@@ -1283,5 +1619,170 @@ body {
 
   .tours-note {
     margin-top: 0;
+  }
+
+/*=================
+    STORE-mobile
+=================*/
+
+  .store-container {
+    margin: 0;
+    border: none;
+  }
+
+  .store-header {
+    margin-left: 30px;
+  }
+
+  .store-sub-header{
+    text-align: justify;
+    margin: 30px 20px 20px 30px;
+  }
+
+  .store-bookcover {
+    max-height: 43%;
+  }
+
+  .store-book-container p {
+    font-size: 15px;
+    text-align: center
+  }
+
+  .store-book-amazon {
+    padding-right: 10px;
+  }
+
+  .store-book-paypal {
+    padding-left: 10px;
+  }
+
+/*===================
+    TOKYO - mobile 
+===================*/
+
+  .tokyo-school-container, .tokyo-school-wrapper {
+    width: 100%;
+    margin: 0;
+    text-align: justify;
+  }
+
+  .tokyo-school-header {
+    margin: 30px;
+    font-size: 25px;
+  }
+
+  .tokyo-school-subheader {
+    font-size: 20px;
+    margin: 40px 0 30px 30px;
+    width: 98%;
+  }
+
+  .tokyo-text {
+    margin: 17px 25px;
+    font-size: 17px;
+  }
+
+  .tokyo-school-paragraph-intro {
+    margin: 23px;
+  }
+
+  .tokyo-school-video {
+    height: 180px;
+    width: 300px;
+  }
+/*====================
+    OSAKA-mobile
+====================*/
+
+.osaka-school-container, .osaka-school-wrapper {
+    width: 100%;
+    margin: 0;
+    text-align: justify;
+    font-size: 16px
+  }
+
+  .osaka-school-wrapper {
+    width: 100%;
+  }
+
+  .osaka-school-header {
+    font-size: 25px;
+    width: 100%;
+    margin: 17px 20px;
+  }
+
+  .osaka-school-subheader {
+    font-size: 20px;
+    width: 80%;
+    margin: 40px 0 40px 20px;
+  }
+
+  .osaka-details {
+    margin-bottom: 10px;
+  }
+
+  .osaka-school-video {
+    height: 180px;
+    width: 300px;
+  }
+
+  .osaka-school-faq-container {
+    width: 89%;
+  }
+
+  .osaka-bottom-container {
+    margin: 0 20px;
+  }
+
+  .osaka-link {
+    font-size: 4.0vw;
+  }
+
+  .osaka-carousel-container {
+    display: none;
+  }
+
+  .osaka-carousel-mobile {
+    display: block;
+  }
+
+  #legend {
+    margin: 20px;
+  }
+}
+
+/*------------------------
+media queries - large scrn
+------------------------*/
+@media only screen and (min-width: 115em) {
+
+/*=================
+  NAV - large scrn
+==================*/
+
+  .logo-banner {
+    margin-right: 335px;
+  } 
+
+/*==================
+ STORE - large scrn
+===================*/
+
+  img.store-bookcover {
+    max-height: 70%;
+    max-width: 70%;
+  }
+
+  .store-sub-header {
+    font-size: 20px;
+    margin: 30px 20px 40px 30px;
+  }
+
+  .store-book-container p {
+    font-size: 20px;
+  }
+
+  .store-t-shirt-div img {
+    max-height: 550px;
   }
 }

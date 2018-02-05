@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import logo from '../images/favicon.ico';
 import { Link, withRouter } from 'react-router-dom';
 import Auth from '../modules/Auth';
+import SchoolDropDown from './SchoolDropDown';
 
 class Navigation extends Component {
     constructor (props) {
@@ -39,6 +40,10 @@ class Navigation extends Component {
                             <li className="mobile-menu-item" onClick={this.handleReturnClick}>Ramen Blog</li>
                         </Link>
                         <hr className="hr-mobile"/>
+                        <Link to="/best-of" className="nav-link">
+                            <li className="mobile-menu-item" onClick={this.handleReturnClick}>Best of the Best</li>
+                        </Link>
+                        <hr className="hr-mobile" />
                         <Link to="/store" className="nav-link">
                             <li className="mobile-menu-item" onClick={this.handleReturnClick}>Store</li>
                         </Link>
@@ -47,8 +52,12 @@ class Navigation extends Component {
                             <li className="mobile-menu-item" onClick={this.handleReturnClick}>Ramen Tours</li>
                         </Link>
                         <hr className="hr-mobile"/>
-                        <Link to="/schools" className="nav-link">
-                            <li className="mobile-menu-item" onClick={this.handleReturnClick}>Ramen Schools</li>
+                        <Link to="/tokyo-school" className="nav-link">
+                            <li className="mobile-menu-item" onClick={this.handleReturnClick}>Tokyo Ramen School</li>
+                        </Link>
+                        <hr className="hr-mobile" />
+                        <Link to="/osaka-school" className="nav-link">
+                            <li className="mobile-menu-item" onClick={this.handleReturnClick}>Osaka Ramen School</li>
                         </Link>
                         <hr className="hr-mobile"/>
                         <Link to="/media" className="nav-link">
@@ -73,16 +82,16 @@ class Navigation extends Component {
 
   render() {
     return (
-        <div className="nav">
+        <header className="nav">
             <div className="top-nav">
-                <Link to="/" className="logo-banner nav-link">
+                <Link to="/" className="logo-banner">
                     <img className="logo" src={logo} alt="Ramen Adventures logo"/>
                     <div className="banner">
-                        <p className="banner-text">RAMEN ADVENTURES</p>
+                        <p>RAMEN ADVENTURES</p>
                     </div>
                 </Link>
                 <div className="top-elements">
-                    <div className="top-nav">
+                    <div className="right-nav">
                         {(Auth.isUserAuthenticated() && Auth.isTokenDefined()) ? (
                             <Link to="/" className="nav-link">
                                 <div className="top-links" onClick={this.props.logOut}>
@@ -126,38 +135,49 @@ class Navigation extends Component {
                 </div>
             <hr className="hr-nav"/>
             <div className="bottom-nav">
-                <Link to="/blog" className="nav-link">
+                <Link to="/blog">
                     <div className="blog bottom-links">
                         Ramen Blog
                     </div>
                 </Link>
-                <Link to="/store" className="nav-link">
+                <Link to="/best-of">
+                    <div className="bottom-links">
+                        Best of the Best
+                    </div>
+                </Link>
+                <Link to="/store">
                     <div className="books bottom-links">
                         Store [Books & Tshirts]
                     </div>
                 </Link>
-                <Link to="/tours" className="nav-link">
+                <Link to="/tours">
                     <div className="tours bottom-links">
                         Ramen Tours
                     </div>
                 </Link>
-                <Link to="/schools" className="nav-link">
+                <div className="schools-dropdown-wrapper">
                     <div className="schools bottom-links">
-                        Ramen Schools
+                        Schools
+                    </div>
+                    <SchoolDropDown />
+                </div>
+                <Link to='/map'>
+                    <div className="about bottom-links">
+                        Ramen Map
                     </div>
                 </Link>
-                <Link to="/media" className="nav-link">
+                <Link to="/media">
                     <div className="media bottom-links">
                         Media
                     </div>
                 </Link>
-                <Link to='/about' className="nav-link">
+                <Link to='/about'>
                     <div className="about bottom-links">
                         About Me
                     </div>
                 </Link>
             </div>
-        </div>
+        </header>
     )
   }
 }

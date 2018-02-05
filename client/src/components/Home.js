@@ -15,18 +15,10 @@ import midpicks from '../images/picksmiddle.png';
 import rtpicks from '../images/picksright.png';
 
 class Home extends Component {
-   
-//     getPhotos(){
-//     axios.get('/photos/1313')
-//       .then((res) => {
-//         this.setState({ photo: res.data.link });
-//       })
-//   }
 
     render() {
         return (
             <div className="home home-container">
-                
                 <div className="home top-container">
                     <p className="top-text">A one stop shop for everything Ramen!</p> 
                     <img src={ltramen} className="top-image" alt="bowl of ramen" />
@@ -60,7 +52,7 @@ class Home extends Component {
                             <img src={tour} className="home middle-image tour" alt="black and white of street view in Japan with Ramen shop in frame"/>
                         </div>
                     </Link>
-                    <Link to='/schools' className="nav-link links-container">
+                    <Link to='/tokyo-school' className="nav-link links-container">
                         <div className="home right">
                             <div className="home right-middle-text middle-text">
                                 <p className="ramen-text title">
@@ -76,16 +68,16 @@ class Home extends Component {
                 </div>
                 <div className="home bottom-middle-container">
                     <div className="home left bottom-middle">
-                         <div className="home left-middle-text">
-                             <Link to="/store" className="nav-link">
+                        <Link to="/store" className="nav-link">
+                            <div className="home left-middle-text">
                                 <p className="ramen-text title">
                                     Shop
                                 </p>
-                            </Link>
-                            <p className="ramen-text description">
-                                Don't forget to pick up a copy of my book at Top Ramen Shops in Tokyo! I also have t-shirts!
-                            </p>
-                        </div>
+                                <p className="ramen-text description">
+                                    Don't forget to pick up a copy of my book at Top Ramen Shops in Tokyo! I also have t-shirts!
+                                </p>
+                            </div>
+                        </Link>
                         <div className="shop-contain">
                             <img src={book}  className="home bottom-image" alt="cover of Brian's book"/>
                             <img src={whiteshirt}  className="home bottom-image" alt="white t-shirt with RA logo in red"/>
@@ -93,14 +85,16 @@ class Home extends Component {
                         </div>
                     </div>
                     <div className="home right bottom-middle">
-                        <div className="home right-middle-text">
-                            <p className="ramen-text title">
-                                My Top Picks
-                            </p>
-                            <p className="ramen-text description">
-                                Not sure which shops to choose? Check out my list of top shops!
-                            </p>
-                        </div>
+                        <Link to="/best-of" className="nav-link">
+                            <div className="home right-middle-text">
+                                <p className="ramen-text title">
+                                    My Top Picks
+                                </p>
+                                <p className="ramen-text description">
+                                    Not sure which shops to choose? Check out my list of top shops!
+                                </p>
+                            </div>
+                        </ Link>
                         <div className="picks-contain">
                             <img src={ltpicks}  className="home picks-image" alt="bowl of ramen"/>
                             <img src={midpicks}  className="home picks-image" alt="bowl of ramen"/>
@@ -108,7 +102,6 @@ class Home extends Component {
                          </div>
                     </div>
                 </div>
-                
             </div>
         );
     }
